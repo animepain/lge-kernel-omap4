@@ -137,17 +137,5 @@ ifeq ($(CONFIG_MACH_LGE),y)
 subdir-ccflags-$(CONFIG_ARCH_OMAP2PLUS) += -Iarch/arm/mach-omap2/lge/include
 endif
 
-# LGE_BROADCAST {
-# LGE_BROADCAST_1SEG
-obj-$(CONFIG_LGE_BROADCAST_1SEG) += broadcast/
-# LGE_BROADCAST_TDMB
-obj-$(CONFIG_LGE_BROADCAST_TDMB) += broadcast/
-# LGE_BROADCAST }
-
 obj-$(CONFIG_MUIC) += muic/
 obj-y += lge/
-
-#FeliCa
-obj-$(CONFIG_LGE_FELICA) 	+= felica/
-#obj-$(CONFIG_LGE_FELICA) 	+= mosquitod/
-#obj-$(CONFIG_LGE_FELICA) 	+= mosquitou/
