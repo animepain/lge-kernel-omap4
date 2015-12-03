@@ -139,12 +139,3 @@ source "drivers/rpmsg/Kconfig"
 source "drivers/omap_hsi/Kconfig"
 
 source "drivers/lge/Kconfig"
-
-# LGE_BROADCAST {
-source "drivers/broadcast/Kconfig"
-# LGE_BROADCAST }
-endmenu
-
-menu "FeliCa"
-source "drivers/felica/Kconfig"
-endmenu
